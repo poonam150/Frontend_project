@@ -1,17 +1,33 @@
-<<<<<<< HEAD
-# React + Vite
+# Blinkit Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend project built with React and Vite that aims to clone the user interface of the Blinkit application.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast frontend build tool.
+- **React Router DOM**: For handling routing within the application.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Frontend_project
-Blinkit_clone
->>>>>>> cd9d6f61d52680edcc6056551c977012b242a413
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- Node.js (v18 or newer)
+- npm
+
+### Installation
+
+1.  Clone the repo
+    ```sh
+    git clone https://github.com/poonam150/Frontend_project.git
+    ```
+2.  Install NPM packages
+    ```sh
+    npm install
+    ```
+3.  Start the development server
+    ```sh
+    npm run dev
+    ```
