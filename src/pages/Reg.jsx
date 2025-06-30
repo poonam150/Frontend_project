@@ -9,7 +9,7 @@ const Registration = () => {
             <form action="">
                 <div className="mb-4">
                     <label htmlFor="name" className="block mb-1 font-semibold text-sm">Name</label>
-                    <input type="text" name="email" id="email" placeholder="Enter your name..." className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500"/>
+                    <input type="text" name="label" id="name" placeholder="Enter your name..." className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-500"/>
                 </div>
                 <div className="mb-4">
                     <label htmlFor="email" className="block mb-1 font-semibold text-sm">Email</label>
@@ -23,7 +23,7 @@ const Registration = () => {
             </form>
             <p className="text-center text-sm mt-4">
                 Already have an account?{" "}
-                 <Link to="/" className="text-green-600 font-semibold">Login</Link>{" "}
+                 <Link to="/login" className="text-green-600 font-semibold">Login</Link>{" "}
             </p>
         </div>
     </div>
