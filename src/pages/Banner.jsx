@@ -1,10 +1,11 @@
 import React from 'react'
+import BannerImg from "../assets/banner.jpeg";
 
 const Banner = () => {
   return (
     <div className="w-full my-6 px-4">
         <div className="relative rounded-xl overflow-hidden shadow-lg">
-        <img src="" alt="Banner Image" className="w-full h-60 md:h-80 object-cover"/>
+        <img src={BannerImg} alt="Banner Image" className="w-full h-60 md:h-80 object-cover"/>
         <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center">
             <h2 className="text-white text-3xl  md:text-5xl font-bold mb-2">Get Your Groceries <br/>
             Delivered in 10 minutes </h2>

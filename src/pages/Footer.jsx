@@ -58,10 +58,10 @@ Company Name
         Follow us 
     </h3>
     <ul className='text-blue-900 text-sm space-y-2'>
-    <li><Link>Facebook</Link></li>
-    <li><Link>Instagram</Link></li>
-    <li><Link>Twitter</Link></li>
-    <li><Link>Threads</Link></li>
+    <li><a href="#" className="hover:underline">Facebook</a></li>
+    <li><a href="#" className="hover:underline">Instagram</a></li>
+    <li><a href="#" className="hover:underline">Twitter</a></li>
+    <li><a href="#" className="hover:underline">Threads</a></li>
     </ul>
 
 
