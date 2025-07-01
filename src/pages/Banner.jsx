@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="w-full my-6 px-4">
         <div className="relative rounded-xl overflow-hidden shadow-lg">
         <img src={BannerImg} alt="Banner Image" className="w-full h-60 md:h-80 object-cover"/>
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center">
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-start p-6 ">
             <h2 className="text-white text-3xl  md:text-5xl font-bold mb-2">Get Your Groceries <br/>
             Delivered in 10 minutes </h2>
             <p className="text-white text-lg md:text-xl mb-4">Fresh & Fast Delivery at your doorstep !</p>

@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 
 const Navbar = () => {
 
- const cartItems = useSelector((state) => state.cart.cartItems);
+ const cartItems = useSelector((state) => state.cart?.cartItems) || [];
  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (

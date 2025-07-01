@@ -1,18 +1,23 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { DeleteItem } from '../features/cartSlice';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
-  const cartItems = useSelector((state) => state.cart.cartItems);
+  const cartItems = useSelector((state) => state.cart?.cartItems) || [];
   const totalPrice = cartItems.reduce((acc, item) => acc + (item.price * (item.quantity || 1)), 0);
+  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
   const dispatch = useDispatch();
 
   return (
     <div className=" w-full max-m-md bg-gray-100 m-4 p-4 sm:p-6 shadow-lg rounded-lg mx-auto">
         <h1 className="text-lg font-bold text-center mb-4 "> Your Cart</h1>
         {cartItems.length === 0 ? (
-          <p className="text-center text-gray-500">Your cart is empty.</p>
+          <div className='text-center'>
+          <p className=" text-xl  text-red-500">Your cart is empty😒</p>
+          <Link to={"/"}className=" text-sm  text-blue-700" > Continue shopping 🛒</Link>
+          </div>
         ) : (
           <div className="space-y-4">
               {/* Cart Items */}
@@ -43,6 +48,18 @@ const Cart = () => {
                     </div>
                 </div>
               ))}
+
+
+              <div className='mt-6  pt-4'>
+                  <div className='flex justify-between font-semibold text-lg mb-2'>
+                      <span>
+                          Total Products:
+                      </span>
+                      <span>
+                          {totalQuantity}
+                      </span>
+                  </div>
+              </div>
               
               <div className='mt-6  pt-4'>
                   <div className='flex justify-between font-semibold text-lg mb-2'>
